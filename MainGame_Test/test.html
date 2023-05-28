@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Game</title>
+    </head>
+    <body>
+      
+    <div>  
+    <div id="container">
+      <div class="droparea" id="droparea1"></div>
+      <div class="droparea" id="droparea2"></div>
+      <div class="droparea" id="droparea3"></div>
+    </div>
+    
+    <div class="pictureArea">
+      <img src="img/dog.jfif" class="pictureSize" id="img1" draggable="true" />
+      <img src="img/bird.jfif" class="pictureSize" id="img2" draggable="true"/>
+      <img src="img/fish.jfif" class="pictureSize" id="img3" draggable="true"/>
+    </div>
+      
+    <div><button id="submitBtn">提交</button></div>
+    <div id="ans"></div>
+    </div>
+  
+  <body>
+
+</html>
+
+<style>
+
+#container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        width: 600px;
+        margin: 50px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+.droparea {
+        width: 175px;
+        height: 175px;
+        border: 2px dashed gray;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+.pictureArea {
+        width: 600px;
+        height: 200px;
+        margin: 60px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+ .pictureSize{
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+      }
+      
+  #submitBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4CAF50;
+        color: #fff;
+        border:  none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        height: 7vh;
+        width: 200px;
+        margin: 5px;
+        text-align: center;
+        margin-left: 250px;
+      }
+
+      #submitBtn:hover {
+        background-color: #3e8e41;
+      }
+
+      #submitBtn:active {
+        background-color: #3e8e41;
+        transform: translateY(2px);
+      }
+      
+</style>
+
+<script>
+    const img1 = document.getElementById('img1');
+    const img2 = document.getElementById('img2');
+    const img3 = document.getElementById('img3');
+    const droparea1 = document.getElementById('droparea1');
+    const droparea2 = document.getElementById('droparea2');
+    const droparea3 = document.getElementById('droparea3');
+    const submitBtn = document.getElementById('submitBtn');
+
+
+    // dragstart event
+    img1.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', 'img1');
+    });
+    img2.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', 'img2');
+    });
+    img3.addEventListener('dragstart', e => {
+      e.dataTransfer.setData('text/plain', 'img3');
+    });
+
+    // dragover event
+    droparea1.addEventListener('dragover', e => {
+      e.preventDefault();
+    });
+    droparea2.addEventListener('dragover', e => {
+      e.preventDefault();
+    });
+    droparea3.addEventListener('dragover', e => {
+      e.preventDefault();
+    });
+    
+    // drop event
+    droparea1.addEventListener('drop', e => {
+      e.preventDefault();
+      const data = e.dataTransfer.getData('text/plain');
+      const img = document.getElementById(data);
+      droparea1.appendChild(img);
+    });
+    droparea2.addEventListener('drop', e => {
+      e.preventDefault();
+      const data = e.dataTransfer.getData('text/plain');
+      const img = document.getElementById(data);
+      droparea2.appendChild(img);
+    });
+    droparea3.addEventListener('drop', e => {
+      e.preventDefault();
+      const data = e.dataTransfer.getData('text/plain');
+      const img = document.getElementById(data);
+      droparea3.appendChild(img);
+    });
+    
+    
+    // check ans
+    submitBtn.addEventListener('click', () => {
+      
+      const images1 = droparea1.querySelectorAll('img');
+
+
+      const images2 = droparea2.querySelectorAll('img');
+
+
+      const images3 = droparea3.querySelectorAll('img');
+
+      if(images1.length === 1 && images1[0].id === 'img1' && images2.length === 1 && images2[0].id === 'img2' &&
+      images3.length === 1 && images3[0].id === 'img3'){
+        //ans.innerHTML = '答案錯誤';
+        alert('答案正確');
+      } else {
+        //ans.innerHTML = '答案正確';
+        alert('答案錯誤');
+      }
+      
+    });  
+    
+</script>

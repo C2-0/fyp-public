@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<head></head>
+<html>
+    <body>
+        <link href="css/chapter1_2.css" rel="stylesheet">
+        <img src="img/Quit.png" onclick="quit()" class="quit">
+        <img src="img/Logout.png" onclick="logout()" class="logout">
+        <img src="img/Miaruko_microbit2.png" class="miaruko" id="miaruko_microbit">
+        <p class="font-name">Miaruko</p>
+        <p class="dialog">
+            安安～ミアルコです～<br>
+            歡迎回來第二節課堂～<br>
+            Micro:bit編程教學(一)<br>
+        </p>
+        <p class="close" onclick="next()">></p>
+
+        <img src="img/Photo3.png" class="photo3" id="photo3">
+        <p class="dialog2">
+            Micro:bit的程式碼可以由python和<br>
+            javascript組成。或者使用MakeCode<br>
+            網站以積木程式進行編程。<br>
+        </p>
+        <p class="close2" onclick="next2()">></p>
+
+        <p class="dialog3">
+            即一種將程式語法或元件，表示成不同<br>
+            的形狀、大小的積木，然後用積木堆疊<br>
+            的概念來組合出各式各樣的程式邏輯。
+        </p>
+        <p class="close3" onclick="next3()">></p>
+
+        <p class="dialog4">
+            每個人都可以完成一個小房子，但每個<br>
+            人邏輯及創意不同，所以積木堆疊的方<br>
+            式也會不同。
+        </p>
+        <p class="close4" onclick="next4()">></p>
+
+        <p class="dialog5">
+            打開網頁瀏覽器，例如Google Chrome<br>
+            輸入網址makecode.microbit.org，<br>
+            進入micro:bit程式編輯界面。
+        </p>
+        <p class="close5" onclick="next5()">></p>
+
+        <p class="dialog6">
+            積木程式編輯器在設計程式時會像<br>
+            Scratch一樣組合積木。積木名稱<br>
+            也有標示中文。
+        </p>
+        <p class="close6" onclick="next6()">></p>
+
+        <p class="dialog7">
+            將滑鼠游標停留在積木上，就會彈<br>
+            出視窗顯示說明和原始碼，說明功<br>
+            能也很豐富。
+        </p>
+        <p class="close7" onclick="next7()">></p>
+
+        <p class="dialog8">
+            這一節課堂，我會教大家在MakeCode<br>
+            網站上利用micro:bit程式編輯界面<br>
+            進行簡單積木程式編輯。
+        </p>
+        <p class="close8" onclick="next8()">></p>
+
+        <p class="dialog9">
+            題目是閃爍的心。學習如何使用LED燈<br>
+            來做個閃爍的心！效果將會是以上<br>
+            micro:bit模擬器一樣。
+        </p>
+        <p class="close9" onclick="next9()">></p>
+        <div class="microbit"><iframe class="microbit_iframe" src="https://makecode.microbit.org/---run?id=_cr5FEyRyvYJz" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
+        
+        <p class="dialog10">
+            那麼請先打開以下網站，然後點選新增<br>
+            專案，專案名字為閃爍的心。<br>
+        </p>
+        <p class="close10" onclick="next10()">></p>
+        <p class="close10_1" onclick="next10_1()">Makecode.com</p>
+
+        <img src="img/Photo4.png" class="photo4" id="photo4">
+
+        <p class="dialog11">
+            首先，放置顯示指示燈在重複無限次裡<br>
+            面，然後畫一顆心。<br>
+        </p>
+        <p class="close11" onclick="next11()">></p>
+        <img src="img/Photo5.gif" class="photo5" id="photo5">
+
+        <p class="dialog12">
+            放置另一個顯示指示燈，不要畫上任何<br>
+            東西，或者你可以畫你想要的圖案。
+        </p>
+        <p class="close12" onclick="next12()">></p>
+        <img src="img/Photo6.png" class="photo6" id="photo6">
+
+        <p class="dialog13">
+            觀察右邊Micro:bit模擬器，你應該會<br>
+            看到愛心圖案在閃耀。如上圖一樣。
+        </p>
+        <p class="close13" onclick="next13()">></p>
+
+        <p class="dialog14">
+            接下來是JavaScript和Python編程教<br>
+            學，我們可以按下上方JavaScript或者<br>
+            Python按鈕。
+            
+        </p>
+        <p class="close14" onclick="next14()">></p>
+        <img src="img/Photo7.png" class="photo7" id="photo7">
+
+        <p class="dialog15">
+            就可以將積木程式轉換為JavaScript或<br>
+            者Python程式碼，非常方便對吧？<br>
+            左圖為Python，右圖為JavaScript。
+        </p>
+        <p class="close15" onclick="next15()">></p>
+        <img src="img/Photo8.png" class="photo8" id="photo8">
+        <img src="img/Photo9.png" class="photo9" id="photo9">
+
+        <p class="dialog16">
+            那麼先講解一下Python程式碼，第1<br>
+            行def onforever():的意思是定義一<br>
+            個執行程式的內容。
+        </p>
+        <p class="close16" onclick="next16()">></p>
+
+        <p class="dialog17">
+            而第2行basic.show.leds()的意思<br>
+            是在LED螢幕上顯示一個圖像，<br>
+            (.)代表關閉，(#)代表開啟。
+        </p>
+        <p class="close17" onclick="next17()">></p>
+            
+        <p class="dialog18">
+            最後第16行basic.forever()的意思<br>
+            是執行一個持續在背景執行的程式。<br>
+        </p>
+        <p class="close18" onclick="next18()">></p>
+
+        <p class="dialog19">
+            所以basic.forever(on_forever)<br>
+            的意思是持續執行顯示LED螢幕上<br>
+            的圖像。
+        </p>
+        <p class="close19" onclick="next19()">></p>
+
+        <p class="dialog20">
+            很簡單對吧？<br>
+        </p>
+
+        <p class="answer1" id="answer1" onclick="answer1()">很簡單～</p>
+        <p class="answer2" id="answer2" onclick="answer1()">Very Easy～</p>
+        <p class="answer3" id="answer3" onclick="answer1()">易しい～</p>
+        <p class="answer4" id="answer4" onclick="answer4()">可以再詳細說明一下？</p>
+
+        <p class="dialog21">
+            不可以！
+        </p>
+
+        <p class="dialog22">
+            接下來是JavaScript程式碼。<br>
+        </p>
+
+        <p class="dialog23">
+            很好，接下來是JavaScript程式碼。<br>
+        </p>
+
+        <p class="dialog24">
+            第1行basic.forever(function())<br>
+            {})的意思是執行一個持續在背景執<br>
+            行的程式。
+        </p>
+        <p class="close24" onclick="next24()">></p>
+
+        <p class="dialog25">
+            而第2行basic.showLeds('')的意思<br>
+            是在LED螢幕上顯示一個圖像，<br>
+            (.)代表關閉，(#)代表開啟。
+        </p>
+        <p class="close25" onclick="next25()">></p>
+
+        <p class="dialog26">
+            明白了嗎？
+        </p>
+        <p class="close26" onclick="next26()">></p>
+        <p class="answer5" id="answer5" onclick="answer5()">明白了～</p>
+        <p class="answer6" id="answer6" onclick="answer6()">不明白。</p>
+        <p class="answer7" id="answer7" onclick="answer7()">完全不懂</p>
+        <p class="answer8" id="answer8" onclick="answer8()">(舉手</p>
+
+        <p class="dialog27">
+            有什麼問題呢？
+        </p>
+        <input type="text" class="ask1" id="ask1" onkeyup="ask1()">
+        <button class="ask2" id="ask2" onclick="next27()">發送</button>
+
+        <p class="dialog28">
+            沒有問題請不要胡亂舉手！
+        </p>
+
+        <p class="dialog29">
+            那麼～第二節課堂就到此為止。<br>
+            感謝各位同學的撥冗聆聽～
+        </p>
+
+        <p class="dialog30">
+            很好很好，有困難記得一定要提<br>
+            問哦～
+        </p>
+
+        <p class="dialog31">
+            。。。。。。
+        </p>
+
+        <p class="dialog32">
+            不過在下課前要做一個小測驗。<br>
+            如何有任何回答錯誤的話即無法<br>
+            通關，請重新回饋這節課堂～
+        </p>
+
+        <p class="dialog33">
+            はじまるよ～<br>
+            (開始囉～)
+        </p>
+        <p class="close33" onclick="next33()">></p>
+
+        <p class="dialog34">
+            問題一
+        </p>
+        <p class="close34" onclick="next34()">></p>
+
+        <p class="dialog35">
+            請分辨以上3種程式語言，並把答案拖拉<br>
+            到適當為止。左：Python，中：積木，<br>
+            右：Javascript。
+        </p>
+        <p class="close35" id="submitBtn">提交</p>
+
+
+
+        <div id="dragAndDrop">  
+            <div id="container">
+            <div class="droparea" id="droparea1"></div>
+            <div class="droparea" id="droparea2"></div>
+            <div class="droparea" id="droparea3"></div>
+        </div>
+            
+        <div class="pictureArea">
+            <img src="img/Photo14.png" class="pictureSize" id="img3" draggable="true" />
+            <img src="img/Photo13.png" class="pictureSize" id="img2" draggable="true"/>
+            <img src="img/Photo15.png" class="pictureSize" id="img1" draggable="true"/>
+        </div>
+              
+            <!--<div><button id="submitBtn">提交</button></div>
+            <div id="ans"></div>
+            </div>-->
+
+        <p class="dialog36">
+            みてみて～<br>
+            (我看看～)
+        </p>
+
+        <p class="dialog37">
+            はい残念～我看到有配對錯誤哦～
+        </p>
+
+        <p class="dialog38">
+            通關失敗，請再加把勁騎士～
+        </p>
+
+        <p class="dialog39">
+            竟然都選對了，残念ね～
+        </p>
+
+        <p class="dialog40">
+            問題二
+        </p>
+
+        <p class="dialog41">
+            請由左至右排列<br>
+            程式輸出的圖案～
+        </p>
+
+        <img src="img/Photo16.png" class="photo16" id="photo16">
+
+        <p class="dialog42">
+            (わくわく～
+        </p>
+
+        <p class="close42" id="submitBtn2">提交</p>
+
+        <p class="dialog43">
+            我看看～
+        </p>
+
+        <p class="dialog44">
+            嗯。。。
+        </p>
+
+        <p class="dialog45">
+            合格分數是100分喔～<br>
+            同學你覺得你需要retake嗎？<br>
+            現在還有名額，真的有信心合格嗎？
+        </p>
+
+        <p class="answer9" id="answer9" onclick="answer9()">我超勇的好不好</p>
+        <p class="answer10" id="answer10" onclick="answer10()">我覺得自己是零</p>
+
+        <p class="answer11" id="answer11" onclick="answer11()">我超勇的好不好</p>
+        <p class="answer12" id="answer12" onclick="answer12()">我覺得自己是零</p>
+
+
+        <p class="dialog46">
+            很好，立即幫你安排～<br>
+            學費已自動轉帳～謝謝老闆～
+        </p>
+
+        <p class="dialog47">
+            好吧，答案正確，合格～<br>
+        </p>
+
+        <p class="dialog48">
+            可惜，這些機會不是屬於你的～<br>
+            不要再說了，重新挑戰吧～
+        </p>
+
+        
+
+        <div id="dragAndDrop2">  
+            <div id="container2">
+            <div class="droparea2" id="droparea4"></div>
+            <div class="droparea2" id="droparea5"></div>
+            <div class="droparea2" id="droparea6"></div>
+            <div class="droparea2" id="droparea7"></div>
+        </div>
+                
+        <div class="pictureArea2">
+            <img src="img/Photo17.png" class="pictureSize" id="img4" draggable="true" />
+            <img src="img/Photo18.png" class="pictureSize" id="img5" draggable="true"/>
+            <img src="img/Photo19.png" class="pictureSize" id="img6" draggable="true"/>
+            <img src="img/Photo20.png" class="pictureSize" id="img7" draggable="true"/>
+        </div>
+
+
+
+
+
+
+    
+
+        <div>
+            <!--<button id="connect" class="button">Connect</button>
+            <button id="disconnect" class="disconnect">Disconnect All</button>
+            <button id="send" class="button">Send "Test" to All</button>
+            <button id="clear" class="clear">Clear Console</button>
+            <div id="console" class="console" style="overflow:auto;border:4px solid black;padding:2%">
+                    Waiting for connection.
+            </div>
+            <p style="font-size:200px" id="text">Null</p>-->
+        </div>
+        <script src="js/dragAndDrop.js"></script>
+        <script src="js/ubitwebusb.js"></script>
+        <script src="js/microbit.js"></script>
+        <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
+        <script src="js/chapter1_2.js"></script>
+    </body>
+</html>

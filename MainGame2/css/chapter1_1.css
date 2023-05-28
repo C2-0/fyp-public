@@ -1,0 +1,739 @@
+.miaruko{
+    position: absolute;
+    top: 355px;
+    left: -200px;
+    width: 70%;
+    height: auto;
+    animation-name: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving{
+    0%{
+        top: 355px;
+    }
+    50%{
+        top: 150px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+@keyframes moving2{
+    0%{
+        top: 250px;
+    }
+    25%{
+        top: 200px;
+    }
+    75%{
+        top: 250px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+.font-name{
+    position: absolute;
+    font-size: 45px;
+    font-family: cursive;
+    color: white;
+    top: 455px;
+    left: 405px;
+}
+.dialog{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+}
+.close{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+}
+.dialog2{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close2{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.photo1{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    display: none;
+    width: 100%;
+}
+.photo2{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    display: none;
+    width: 90%;
+}
+.dialog3{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close3{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog4{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close4{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog5{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close5{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog6{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close6{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog7{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close7{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog8{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close8{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog9{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close9{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog10{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 700px;
+    width: max-content;
+    display: none;
+}
+.close10{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog11{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+
+.dialog12{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close12{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.answer1{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer2{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer3{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer4{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 0px;
+    left: 1000px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer5{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer6{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer7{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 200px;
+    left: 1000px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer8{
+    font-size: 100px;
+    font-family: cursive;
+    position: absolute;
+    top: 0px;
+    left: 1000px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+
+.dialog13{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close13{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog14{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close14{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog15{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close15{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog16{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close16{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog17{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 700px;
+    width: max-content;
+    display: none;
+}
+.close17{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog18{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close18{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog19{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close19{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+.dialog20{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close20{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog21{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 700px;
+    width: max-content;
+    display: none;
+}
+.close21{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog22{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close22{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.answer9{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer10{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer11{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer12{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer13{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer14{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer15{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.answer16{
+    font-size: 50px;
+    font-family: cursive;
+    position: absolute;
+    top: 350px;
+    left: 700px;
+    width: max-content;
+    display: none;
+    cursor: pointer;
+}
+.dialog23{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog23_1{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close23{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.close23_1{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog24{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close24{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog25{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close25{
+    position: absolute;
+    font-family: cursive;
+    top: 650px;
+    right: 250px;
+    font-size: 45px;
+    cursor: pointer;
+    display: none;
+}
+.dialog26{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close26{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.close25_1{
+    position: absolute;
+    font-family: cursive;
+    top: 650px;
+    right: 100px;
+    font-size: 45px;
+    cursor: pointer;
+    display: none;
+}
+.dialog27{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close27{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog28{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close28{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.quit{
+    position: absolute;
+    width: auto;
+    height: 10%; 
+    top: 0px;
+    left: 1190px;
+    z-index: 9999;
+}
+.logout{
+    position: absolute;
+    width: 6%;
+    height: 10%; 
+    top: 0px;
+    left: 1110px;
+    z-index: 9999;
+}

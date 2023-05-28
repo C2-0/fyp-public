@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+<body>
+    <link href="css/homepage.css" rel="stylesheet">
+    <img src="img/Miaruko_microbit.png" width="800" height="800" id="miaruko_microbit" onclick="poke()">
+    <div class="middle">
+        <button class="btn" onclick="mainGame2()" onmousemove="mainGamein()" onmouseleave="mainGame2out()">闖關模式</button>
+        <button class="btn">編程模式</button>
+        <button class="btn">教學重溫</button>
+        <button class="btn">益智遊戲</button>
+        <button class="btn">成就回顧</button>
+        <button class="btn">開發名單</button>
+        <button class="btn" onclick="logout()">登出遊戲</button>
+    </div>
+    <div class="modal-content">
+        <p class="detal">
+            以關卡模式進行遊戲
+        </p>
+    </div>
+    <div class="modal-content2">
+        <p class="detal">
+            請點擊按鍵選擇遊戲內容
+        </p>
+    </div>
+    <div class="bg-modal3">
+        <div class="modal-content3">
+            <img src="img/Miaruko_microbit3.png" class="miaruko">
+            <div class="close3" onclick="pokeclose()">
+                >
+            </div>
+            <ruby class="talk1">いい加減にしてください</ruby>
+        </div>
+    </div>
+    </body>
+</html>
+<script src="js/homepage.js"></script>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <link href="css/chapter1.css" rel="stylesheet">
+    <body>
+        <div class="cube cube1" id="cube1" onmousemove="level1_1detalin()" onmouseleave="level1_1detalout()" onclick="chapter1_1()">
+            <div class="top"></div>
+            <div>  
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+        <div class="cube cube2" id="cube2"  onmousemove="level1_2detalin()" onmouseleave="level1_2detalout()" onclick="chapter1_2()">
+            <div class="top2"></div>
+            <div>  
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+        <div class="cube cube3" id="cube3" onmousemove="level1_3detalin()" onmouseleave="level1_3detalout()" onclick="chapter1_3()">
+            <div class="top3"></div>
+            <div>  
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+        <div class="cube cube4" id="cube4">
+            <div class="top4"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+        <div class="cube cube5" id="cube5">
+            <div class="top5"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+        <div class="bg-modal">
+            <div class="modal-content">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close" onclick="next()">
+                    >
+                </div>
+                <h1 class="dialog">安安～歡迎遊玩闖關模式。</h1><br>
+            </div>
+        </div>
+        <div class="bg-modal2">
+            <div class="modal-content2">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close2" onclick="next2()">
+                    >
+                </div>
+                <h1 class="dialog">我的名字是Miaruko。</h1><br>
+            </div>
+        </div>
+        <div class="bg-modal3">
+            <div class="modal-content3">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close3" onclick="next3()">
+                    >
+                </div>
+                <h1 class="dialog">將會是你的遊戲領導員。</h1><br>
+            </div>
+        </div>
+        <div class="bg-modal4">
+            <div class="modal-content4">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close4" onclick="next4()">
+                    >
+                </div>
+                <h1 class="dialog">帶領你逐步認識與學習</h1><br><br><br>
+                <h1 class="dialog">micro:bit編程。</h1>
+            </div>
+        </div>
+        <div class="bg-modal5">
+            <div class="modal-content5">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close5" onclick="next5()">
+                    >
+                </div>
+                <h1 class="dialog">以及各種外置套件的應用</h1><br><br><br>
+                <h1 class="dialog">和功能。</h1>
+            </div>
+        </div>
+        <div class="bg-modal6">
+            <div class="modal-content6">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close6" onclick="next6()">
+                    >
+                </div>
+                <h1 class="dialog">本課程專為零礎學生設計</h1><br><br><br>
+                <h1 class="dialog">所以不用過於顧慮。</h1>
+            </div>
+        </div>
+        <div class="bg-modal7">
+            <div class="modal-content7">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close7" onclick="next7()">
+                    >
+                </div>
+                <h1 class="dialog">所以請同學要專心聆聽</h1><br><br><br>
+                <h1 class="dialog">每一節的課堂內容哦～</h1>
+            </div>
+        </div>
+        <div class="bg-modal8">
+            <div class="modal-content8">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close8" onclick="next8()">
+                    >
+                </div>
+                <h1 class="dialog">當然，如果你早已認識章</h1><br><br><br>
+                <h1 class="dialog">節內容，可以自信地跳過</h1><br><br><br>
+                <h1 class="dialog">我的課堂講解～</h1>
+            </div>
+        </div>
+        <div class="bg-modal9">
+            <div class="modal-content9">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close9" onclick="next9()">
+                    >
+                </div>
+                <h1 class="dialog">閑話就到此為止吧，讓</h1><br><br><br>
+                <h1 class="dialog">我們輕鬆學習編程吧～</h1>
+            </div>
+        </div>
+        <div class="bg-modal10">
+            <div class="modal-content10">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close10" onclick="next10()">
+                    >
+                </div>
+                <h1 class="dialog">首先讓我來說明一下闖</h1><br><br><br>
+                <h1 class="dialog">關模式的關卡類別吧～</h1>
+            </div>
+        </div>
+        <div class="bg-modal11">
+            <div class="cube cube6" id="cube6">
+                <div class="top"></div>
+                <div>  
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="modal-content11">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close11" onclick="next11()">
+                    >
+                </div>
+                <h1 class="dialog">綠色方塊是教學關卡</h1><br><br><br>
+                <h1 class="dialog">由我來為同學們講課～</h1>
+            </div>
+        </div>
+        <div class="bg-modal12">
+            <div class="cube cube7" id="cube7">
+                <div class="top"></div>
+                <div>  
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="modal-content12">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close12" onclick="next12()">
+                    >
+                </div>
+                <h1 class="dialog">課堂結束前會有小測驗</h1><br><br><br>
+                <h1 class="dialog">正常情況下不會很困難</h1>
+            </div>
+        </div>
+        <div class="bg-modal13">
+            <div class="cube cube8" id="cube8">
+                <div class="top6"></div>
+                <div>  
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+            <div class="modal-content13">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close13" onclick="next13()">
+                    >
+                </div>
+                <h1 class="dialog">紅色方塊是挑戰關卡</h1><br><br><br>
+                <h1 class="dialog">總結整個章節的內容</h1><br><br><br>
+                <h1 class="dialog">進行一次小型考試～</h1>
+            </div>
+        </div>
+        <div class="bg-modal14">
+            <div class="modal-content14">
+                <img src="img/Miaruko_microbit2.png" class="miaruko">
+                <div class="close14" onclick="next14()">
+                    >
+                </div>
+                <h1 class="dialog">後續會出現更多有趣</h1><br><br><br>
+                <h1 class="dialog">關卡，我不詳細說明</h1><br><br><br>
+                <h1 class="dialog">了希望同學自行發掘</h1>
+            </div>
+        </div>
+        <div class="bg-modal15">
+            <div class="modal-content15">
+                <img src="img/Miaruko_microbit.png" class="miaruko">
+                <div class="close15" onclick="next15()">
+                    >
+                </div>
+                <h1 class="dialog">那麼冒險正式開始囉</h1><br><br><br>
+                <h1 class="dialog">祝你好運～～</h1>
+            </div>
+        </div>
+        <div class="modal-content16">
+            <p class="detal">
+                章節1-1<br>
+                Micro:bit基本介绍
+            </p>
+        </div>
+        <div class="bg-modal17">
+            <div class="modal-content17">
+                <div class="close17" onclick="chapterClose()">
+                    +
+                </div>
+                <h1 class="detal" style="font-size:40px">確定開始章節1-1關卡？</h1>
+                <h1 class="detal" style="font-size:40px" onclick="chaper1_1Start()">確定</h1>
+            </div>
+        </div>
+        
+        <div class="modal-content18">
+            <p class="detal">
+                章節1-2<br>
+                Micro:bit編程教學(一)
+            </p>
+        </div>
+        <div class="bg-modal19">
+            <div class="modal-content19">
+                <div class="close19" onclick="chapterClose2()">
+                    +
+                </div>
+                <h1 class="detal" style="font-size:40px">確定開始章節1-2關卡？</h1>
+                <h1 class="detal" style="font-size:40px" onclick="chaper1_2Start()">確定</h1>
+            </div>
+        </div>
+
+        <div class="modal-content20">
+            <p class="detal">
+                章節1-3<br>
+                基本顯示講解(一)
+            </p>
+        </div>
+        <div class="bg-modal21">
+            <div class="modal-content21">
+                <div class="close21" onclick="chapterClose3()">
+                    +
+                </div>
+                <h1 class="detal" style="font-size:40px">確定開始章節1-3關卡？</h1>
+                <h1 class="detal" style="font-size:40px" onclick="chaper1_3Start()">確定</h1>
+            </div>
+        </div>
+
+
+
+
+        <img src="img/Quit.png" onclick="quit()" class="quit">
+        <img src="img/Logout.png" onclick="logout()" class="logout">
+    </body>
+    <script src="js/chapter1.js"></script>
+</html>

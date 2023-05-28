@@ -1,0 +1,688 @@
+.miaruko{
+    position: absolute;
+    top: 355px;
+    left: -200px;
+    width: 70%;
+    height: auto;
+    animation-name: none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes moving{
+    0%{
+        top: 355px;
+    }
+    50%{
+        top: 150px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+@keyframes moving2{
+    0%{
+        top: 250px;
+    }
+    25%{
+        top: 200px;
+    }
+    75%{
+        top: 250px;
+    }
+    100%{
+        top: 200px;
+    }
+}
+.microbit{
+    position:absolute;
+    top: 50px;
+    padding-bottom: 81.97%;
+    overflow:hidden;
+    left: 450px;
+}
+.microbit_iframe{
+    position: relative;
+    top:0;
+    left:0;
+    width:500px;
+    height:1000px;
+    display: none;
+}
+.font-name{
+    position: absolute;
+    font-size: 45px;
+    font-family: cursive;
+    color: white;
+    top: 455px;
+    left: 405px;
+}
+.button{
+    font-size: 30px;
+    font-family: cursive;
+}
+.button2{
+    font-size: 30px;
+    font-family: cursive;
+}
+.dialog{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+}
+.close{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+}
+.dialog2{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close2{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog3{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close3{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog4{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close4{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog5{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close5{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.photo10{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: auto;
+    height: 55%;
+    display: none;
+}
+.photo11{
+    position: absolute;
+    top: 100px;
+    right: 900px;
+    width: auto;
+    height: 35%;
+    display: none;
+}
+.photo12{
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    width: auto;
+    height: 60%;
+    display: none;
+}
+.light{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 120px;
+    left: 500px;
+    display: none;
+}
+.light_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 120px;
+    left: 1000px;
+    display: none;
+}
+.isShake{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 120px;
+    left: 500px;
+    display: none;
+}
+.isShake_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 120px;
+    left: 1000px;
+    display: none;
+}
+.temp{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 30px;
+    left: 500px;
+    display: none;
+}
+.temp_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 30px;
+    left: 1000px;
+    display: none;
+}
+.speed{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 210px;
+    left: 500px;
+    display: none;
+}
+.speed_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 210px;
+    left: 1000px;
+    display: none;
+}
+.rotate{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 300px;
+    left: 500px;
+    display: none;
+}
+.rotate_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 300px;
+    left: 1000px;
+    display: none;
+}
+.microbit_iframe{
+    position: relative;
+    top:0;
+    left:0;
+    width:500px;
+    height:1000px;
+    display: none;
+}
+.dialog6{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close6{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.firmware{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 180px;
+    left: 400px;
+    color: blue;
+    text-decoration: underline;
+    display: none;
+}
+.dialog7{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close7{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog8{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close8{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog9{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close9{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog10{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close10{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog11{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog12{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog13{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog14{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog15{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+    color: white;
+}
+.dialog16{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.productid{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 80px;
+    left: 200px;
+    display: none;
+}
+.productid_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 80px;
+    left: 600px;
+    display: none;
+}
+.vendorid{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 160px;
+    left: 200px;
+    display: none;
+}
+.vendorid_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 160px;
+    left: 600px;
+    display: none;
+}
+.productname{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 240px;
+    left: 200px;
+    display: none;
+}
+.productname_text{
+    position: absolute;
+    font-size: 55px;
+    font-family: cursive;
+    top: 240px;
+    left: 600px;
+    display: none;
+}
+.dialog17{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close17{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog18{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close18{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog19{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close19{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog20{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close20{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog21{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog22{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog23{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog24{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog25{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog26{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close26{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+.dialog27{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog28{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog29{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog30{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog31{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog32{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.dialog33{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    top: 535px;
+    left: 435px;
+    width: max-content;
+    display: none;
+}
+.close33{
+    position: absolute;
+    top: 600px;
+    right: 60px;
+    font-size: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.console{
+    display: none;
+}
+.clear{
+    display: none;
+}
+.disconnect{
+    display: none;
+}
+.quit{
+    position: absolute;
+    width: auto;
+    height: 10%; 
+    top: 0px;
+    left: 1190px;
+	z-index: 9999;
+}
+.logout{
+    position: absolute;
+    width: 6%;
+    height: 10%; 
+    top: 0px;
+    left: 1110px;
+	z-index: 9999;
+}

@@ -1,0 +1,151 @@
+img {
+    filter: alpha(opacity=40);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn{
+    background: none;
+    border: 2px solid #000;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transform: color 0.4s linear;
+    position: relative;
+    font-size: 50px;
+    font-family: cursive;
+}
+.btn:hover{
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+.btn::before{
+    transform: scaleX(0);
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.setting{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+.modal-content{
+    width: 280px;
+    height: 140px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 360px;
+    left: 225px;
+    display: none;
+}
+.detal{
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.modal-content2{
+    width: 280px;
+    height: 140px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 360px;
+    left: 225px;
+    display: none;
+}
+.detal2{
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.bg-modal3{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content3{
+    top: -135px;
+    width: 700px;
+    height: 140px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close3{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    font-size: 50px;
+    cursor: pointer;
+}
+.miaruko{
+    position: relative;
+    top: -30px;
+    right: 470px;
+    width: 250%;
+    height: auto; 
+    display: flex;
+}
+.dialog{
+    font-size: 45px;
+    font-family: cursive;
+    position: absolute;
+    left: 110px;
+    width: max-content;
+}
+.talk1{
+    font-size: 60px;
+    font-family: cursive;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: max-content;
+}

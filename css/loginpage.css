@@ -1,0 +1,149 @@
+img {
+    opacity: 0;
+    filter: alpha(opacity=40);
+}
+body{
+    margin: 0;
+    padding: 0;
+    animation: transitionIn 0.75s;
+}
+.middle{
+    position: absolute;
+    top: 68%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn{
+    background: none;
+    border: 2px solid #000;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transform: color 0.4s linear;
+    position: relative;
+    font-size: 50px;
+    font-family: cursive;
+}
+.btn:hover{
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+.login_btn::before{
+    transform: scaleX(0);
+}
+.login_btn:hover::before{
+    transform: scaleX(1);
+}
+.register_btn::before{
+    transform: scaleX(0);
+}
+.register_btn:hover::before{
+    transform: scaleX(1);
+}
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 60px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.input{
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+    font-size: 50px;
+}
+.register_font{
+    font-size: 50px;
+    font-family: cursive;
+}
+.bg-modal2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content2{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.close2{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 60px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}

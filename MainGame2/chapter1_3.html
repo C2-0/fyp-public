@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head></head>
+<html>
+    <body>
+        <link href="css/chapter1_3.css" rel="stylesheet">
+        <img src="img/Quit.png" onclick="quit()" id="quit" class="quit">
+        <img src="img/Logout.png" onclick="logout()" id="logout" class="logout">
+        <img src="img/Miaruko_microbit2.png" class="miaruko" id="miaruko_microbit">
+        <p class="font-name" id="font-name">Miaruko</p>
+        <p class="dialog">
+            こんにちは～ミアルコです～<br>
+            歡迎回來第三節課堂～<br>
+            Micro:bit基本顯示講解(一)<br>
+        </p>
+        <p class="close" onclick="next()">></p>
+
+        <p class="dialog2">
+            前回我們在Makecode網址編寫<br>
+            了閃爍的心程式，這次我們嘗試<br>
+            把程式放進Micro:bit主版上～
+        </p>
+        <p class="close2" onclick="next2()">></p>
+
+        <p class="dialog3">
+            請同學準備一塊microbit主板、一<br>
+            條USB數據線,還有一台電腦，然後<br>
+            把Micro:bit連接到電腦上～
+        </p>
+        <p class="close3" onclick="next3()">></p>
+        
+        <p class="dialog4">
+            因為時間關係我已經把程式放<br>
+            在這裡，請點擊文件並且放進<br>
+            Micro:bit主版硬碟上。
+        </p>
+        <p class="close4" onclick="next4()">></p>
+        <img src="img/Photo10.png" class="photo10" id="photo10">
+        <img src="img/Photo11.png" class="photo11" id="photo11" onclick="downloadFile1('http://127.0.0.1/index/MainGame2/data/chapter1_3(1).hex','chapter1_3(1).hex')">
+    
+        <p class="dialog5">
+            如果成功將程式放到Micro:bit主<br>
+            版硬碟上的話，你應該會看到愛心<br>
+            圖案在閃耀。如上圖一樣。
+        </p>
+        <p class="close5" onclick="next5()">></p>
+        <div class="microbit"><iframe class="microbit_iframe" src="https://makecode.microbit.org/---run?id=_cr5FEyRyvYJz" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>
+
+        <p class="dialog6">
+            如果失敗的話請檢查電腦是否已經<br>
+            連接Micro:bit主版上，或者手動<br>
+            更新主版Firmware。
+
+        </p>
+        <p class="close6" onclick="next6()">></p>
+        <p class="firmware" id="firmware" onclick="next6_1()">Micro:bit Firmware固件下載網</p>
+
+        <p class="dialog7">
+            還是失敗的話應該係"你個嘢壞咗"<br>
+            請重新買一塊新的主版繼續遊戲<br>
+        </p>
+        <p class="close7" onclick="next7()">></p>
+
+        <p class="dialog8">
+            沒有問題我們就繼續課堂～
+        </p>
+        <p class="close8" onclick="next8()">></p>
+
+        <p class="dialog9">
+            有留意到左上角有兩個按鈕嘛？<br>
+            左邊按鈕是連接Micro:bit主版，<br>
+            右邊按鈕是測試Micro:bit主版。
+        </p>
+        <p class="close9" onclick="next9()">></p>
+
+        <p class="dialog10">
+            請按下左邊按鈕連接Micro:bit主版<br>
+            到遊戲上，因為後續關卡將會要求同<br>
+            學們使用主版進行遊戲～
+        </p>
+        <p class="close10" onclick="next10()">></p>
+        <img src="img/Photo12.png" class="photo12" id="photo12">
+
+        <p class="dialog11">
+            如果成功連接Micro:bit主版，上面<br>
+            將會顯示你Micro:bit主版的硬體<br>
+            資料。
+        </p>
+        <p class="productid" id="productid">ProductID：</p>
+        <p class="productid_text" id="productid_text">Null</p>
+        <p class="vendorid" id="vendorid">VendorID：</p>
+        <p class="vendorid_text" id="vendorid_text">Null</p>
+        <p class="productname" id="productname">Product Name：</p>
+        <p class="productname_text" id="productname_text">Null</p>
+
+
+        <p class="dialog12">
+            。。。。。。
+        </p>
+
+        <p class="dialog13">
+            我還沒有接收到你Micro:bit主版<br>
+            的資料，請按下左邊按鈕連接Micro:bit<br>
+            主版到遊戲上。
+        </p>
+
+        <p class="dialog14">
+            聽話，讓我看看！！！
+        </p>
+
+        <p class="dialog15">
+            看來你不願意合作<br>
+            那麼讓我們享受這無盡的寂靜吧<br>
+        </p>
+
+        <p class="dialog16">
+            說笑的啦，重新下載文件重新來過吧～
+        </p>
+
+        <p class="dialog17">
+            はい，已經接收到你的Micro:bit<br>
+            以上是已連接Micro:bit的硬體資料。
+        </p>
+        <p class="close17" onclick="next17()">></p>
+
+        <p class="dialog18">
+            不但是Micro:bit基本硬體資料，<br>
+            甚至Micro:bit的各種感測值，我<br>
+            也能夠實時提取喔～
+        </p>
+        <p class="close18" onclick="next18()">></p>
+
+        <p class="dialog19">
+            以上是我可以接收的數據例子，<br>
+            你可以測試一下數據是否準確，<br>
+            例如反轉Microbit測試光感值。
+        </p>
+        <p class="close19" onclick="next19()">></p>
+
+        <p class="dialog20">
+            我們來個小測試吧，你試試把<br>
+            光線感測值變為0，然後維持5秒<br>
+        </p>
+
+        <p class="dialog21">
+            1
+        </p>
+
+        <p class="dialog22">
+            1，2
+        </p>
+
+        <p class="dialog23">
+            1，2，3
+        </p>
+
+        <p class="dialog24">
+            1，2，3，4
+        </p>
+
+        <p class="dialog25">
+            1，2，3，4，5
+        </p>
+
+        <p class="dialog26">
+            哦哦？看來你已經掌握到技巧？
+        </p>
+        <p class="close26" onclick="next26()">></p>
+
+        <p class="dialog27">
+            現在你試試連續5秒晃動<br>
+            Micro:bit主板
+        </p>
+
+        <p class="dialog28">
+            1
+        </p>
+
+        <p class="dialog29">
+            1，2
+        </p>
+
+        <p class="dialog30">
+            1，2，3
+        </p>
+
+        <p class="dialog31">
+            1，2，3，4
+        </p>
+
+        <p class="dialog32">
+            1，2，3，4，5
+        </p>
+
+        <p class="dialog33">
+            嗯嗯～這速度剛剛好～
+        </p>
+        <p class="close33" onclick="next33()">></p>
+
+
+
+
+
+        
+        <p class="light" id="light">光線感測值：</p>
+        <p class="light_text" id="light_text">Null</p>
+        <p class="temp" id="temp">溫度感測值(度)：</p>
+        <p class="temp_text" id="temp_text">Null</p>
+        <p class="speed" id="speed">加速度感測值(z)：</p>
+        <p class="speed_text" id="speed_text">Null</p>
+        <p class="rotate" id="rotate">旋轉感測值(度)：</p>
+        <p class="rotate_text" id="rotate_text">Null</p>
+        <p class="isShake" id="isShake">是否正在晃動：</p>
+        <p class="isShake_text" id="isShake_text">Null</p>
+
+        <div>
+            <button id="connect" class="button">連接Micro:bit</button>
+            <button id="disconnect" class="disconnect">Disconnect All</button>
+            <button id="send" class="button2">測試Micro:bit</button>
+            <button id="clear" class="clear">Clear Console</button>
+            <div id="console" class="console" style="overflow:auto;border:4px solid black;padding:2%">
+                    Waiting for connection.
+            </div>
+            <!--<p style="font-size:200px" id="text">Null</p>
+            <p style="font-size:200px" id="text2">Null</p>-->
+        </div>
+        <script src="js/ubitwebusb.js"></script>
+        <script src="js/microbit.js"></script>
+        <script src="https://kit.fontawesome.com/3da1a747b2.js" crossorigin="anonymous"></script>
+        <script src="js/chapter1_3.js"></script>
+    </body>
+</html>

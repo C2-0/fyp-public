@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<html>
+    <link href="css/chapter1_1.css" rel="stylesheet">
+    <body>
+        <img src="img/Quit.png" onclick="quit()" class="quit">
+        <img src="img/Logout.png" onclick="logout()" class="logout">
+        <img src="img/Miaruko_microbit.png" class="miaruko" id="miaruko_microbit">
+        <p class="font-name">Miaruko</p>
+        <p class="dialog">
+            安安～我們又見面了～<br>
+            歡迎來到第一節課堂～<br>
+            Micro:bit基本介绍<br>
+        </p>
+        <p class="close" onclick="next()">></p>
+        
+        <p class="dialog2">
+            首先，我們來看一下Micro:bit的主板。<br>
+            Micro:bit包含兩個可編程按鈕，可以對<br>
+            程序運行進行即時控制。
+        </p>
+        <p class="close2" onclick="next2()">></p>
+
+        <img src="img/Photo1.png" class="photo1" id="photo1">
+
+        <p class="dialog3">
+            金手指引出25個引腳，可以通過鱷魚夾<br>
+            和4mm香蕉插頭進行連接。
+        </p>
+        <p class="close3" onclick="next3()">></p>
+
+
+        <p class="dialog4">
+            25個5X5的紅色LED組成的點陣，可以顯<br>
+            示各種圖形，並且編程庫裡已經預設很<br>
+            多圖像，比如笑臉等。
+        </p>
+        <p class="close4" onclick="next4()">></p>
+
+        <p class="dialog5">
+            背面包含一個複位按鈕，一個三軸加速<br>
+            度傳感器，主芯片內部含有一個芯片溫<br>
+            度檢測裝置。
+        </p>
+        <p class="close5" onclick="next5()">></p>
+        <img src="img/Photo2.png" class="photo2" id="photo2">
+
+        <p class="dialog6">
+            背面還含有一個磁力傳感器，Micro:bit<br>
+            USB接口，電池盒接口，信號天線。
+        </p>
+        <p class="close6" onclick="next6()">></p>
+
+        <p class="dialog7">
+            那麼～第一節課堂就到此為止。<br>
+            感謝各位同學的撥冗聆聽～
+        </p>
+        <p class="close7" onclick="next7()">></p>
+
+        <p class="dialog8">
+            不過在下課前要做一個小測驗。<br>
+            如何有任何回答錯誤的話即無法<br>
+            通關，請重新回饋這節課堂～
+        </p>
+        <p class="close8" onclick="next8()">></p>
+
+        <p class="dialog9">
+            では、さっさと始めましょう～<br>
+            (那麼我們開始吧～)
+        </p>
+        <p class="close9" onclick="next9()">></p>
+
+        <p class="dialog10">
+            問題一
+        </p>
+        <p class="close10" onclick="next10()">></p>
+
+        <p class="dialog11">
+            Micro:bit主板中央總共有少顆紅色<br>
+            LED點陣？
+        </p>
+        <p class="answer1" id="answer1" onclick="answer1()">16</p>
+        <p class="answer2" id="answer2" onclick="answer2()">25</p>
+        <p class="answer3" id="answer3" onclick="answer3()">36</p>
+        <p class="answer4" id="answer4" onclick="answer4()">0</p>
+
+        <p class="dialog12">
+            你是故意的吧，看不見我手上的<br>
+            Micro:bit有25個5X5的紅色<br>
+            LED組成的點陣！
+        </p>
+        <p class="close12" onclick="next11()">></p>
+
+        <p class="dialog13">
+            這個遊戲對你來說過於深奧不適合<br>
+            你，我建議由幼稚園數學開始學習<br>
+            ，我會為你加油的。
+        </p>
+        <p class="close13" onclick="next12()">></p>
+
+        <p class="dialog14">
+            很遺憾，回答錯誤。正確答案是25<br>
+            顆，Micro:bit有25個5X5的紅色<br>
+            LED組成的點陣。
+        </p>
+        <p class="close14" onclick="next13()">></p>
+
+        <p class="dialog15">
+            那麼通關失敗，請再接再厲，重新嘗<br>
+            試。
+        </p>
+        <p class="close15" onclick="next14()">></p>
+
+        <p class="dialog16">
+            很好，回答正確。Micro:bit有25個<br>
+            5X5的紅色LED組成的點陣。那麼下一<br>
+            題。
+        </p>
+        <p class="close16" onclick="next16()">></p>
+
+        <p class="dialog17">
+            問題二
+        </p>
+        <p class="close17" onclick="next17()">></p>
+
+        <p class="dialog18">
+            Micro:bit主板總共有多少個按鈕？
+        </p>
+
+        <p class="answer5" id="answer5" onclick="answer5()">1</p>
+        <p class="answer6" id="answer6" onclick="answer6()">2</p>
+        <p class="answer7" id="answer7" onclick="answer7()">3</p>
+        <p class="answer8" id="answer8" onclick="answer8()">4</p>
+
+        <p class="dialog19">
+            很遺憾，回答錯誤。我不會告訴你正確<br>
+            答案啦，請自行思考。
+        </p>
+        <p class="close19" onclick="next19()">></p>
+
+        <p class="dialog20">
+            很好，回答正確。Micro:bit主板包含<br>
+            兩個可編程按鈕和一個複位按鈕。那麼<br>
+            下一題。
+        </p>
+        <p class="close20" onclick="next20()">></p>
+
+        <p class="dialog21">
+            問題三
+        </p>
+        <p class="close21" onclick="next21()">></p>
+
+        <p class="dialog22">
+            那一個配件在Micro:bit主板主芯片內<br>
+            運作？
+        </p>
+        <p class="close22" onclick="next22()">></p>
+
+        <p class="dialog23">
+            那一個配件在Micro:bit主板主芯片內<br>
+            運作？
+        </p>
+        <p class="close23" onclick="next22()">></p>
+
+        <p class="answer9" id="answer9" onclick="answer9()">三軸加速度傳感器</p>
+        <p class="answer10" id="answer10" onclick="answer10()">信號天線</p>
+        <p class="answer11" id="answer11" onclick="answer11()">磁力傳感器</p>
+        <p class="answer12" id="answer12" onclick="answer12()">USB接口</p>
+        <p class="answer13" id="answer13" onclick="answer13()">電池盒接口</p>
+        <p class="answer14" id="answer14" onclick="answer14()">溫度檢測裝置</p>
+        <p class="answer15" id="answer15" onclick="answer15()">其他</p>
+        <p class="answer16" id="answer16" onclick="answer16()">我不懂啊！</p>
+
+        <p class="dialog23_1">
+            那真是太好了，請你重新聽我講解一遍。
+        </p>
+        <p class="close23_1" onclick="next23()">></p>
+
+        <p class="dialog24">
+            很抱歉，沒有其他答案，請你重新嘗試。
+        </p>
+        <p class="close24" onclick="next24()">></p>
+
+        <p class="dialog25">
+            很遺憾，回答錯誤。需要提示嗎？
+        </p>
+        <p class="close25" onclick="next25()">需要</p>
+        <p class="close25_1" onclick="next25_1()">不需要</p>
+
+        <p class="dialog26">
+            很抱歉，我不會提供提示。
+        </p>
+        <p class="close26" onclick="next26()">></p>
+
+        <p class="dialog27">
+            回答正確。Micro:bit主芯片內部含<br>
+            有一個芯片溫度檢測裝置。
+        </p>
+        <p class="close27" onclick="next27()">></p>
+
+        <p class="dialog28">
+            測驗完結，恭喜你完成第一課內容。<br>
+            接下來也請你再加把勁。
+        </p>
+        <p class="close28" onclick="next28()">></p>
+
+    </body>
+</html>
+<script src="js/chapter1_1.js"></script>

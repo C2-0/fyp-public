@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <link href="css/loginpage.css" rel="stylesheet">
+    <div class="middle">
+        <button onclick="logincheck()" class="btn login_btn">登入</button>
+        <button onclick="register()" class="btn register_btn">註冊</button>
+    </div>
+    <img src="img/Miaruko_microbit.png" id="miaruko_microbit" draggable="true" ondragstart="drag(event)" width="800" height="800">
+    <div class = "bg-modal">
+        <div class="modal-content">
+            <div class="close">
+                +
+            </div>
+            <form action="registerCheckDB.php" name="form2" method="post">
+                <p class="register_font">用戶註冊</p>
+                <input type = "text" name="registerusername" id="rname" placeholder="用戶名"  class="input register_font" required>
+                <input type = "password" name="rpassword" id="pw1" placeholder="密碼" class="input register_font" onkeyup="checkPass();" required>
+                <input type = "password" name="rrpassword" id="pw2" placeholder="確認密碼" class="input register_font" onkeyup="checkPass();" required>
+                <label for="agree">
+                <input type="checkbox" name="agree" id="agree" value="yes"/ required>我同意以下條款
+                <a href="#" title="term of services">term of services</a>
+                </label>
+                <button type = "submit" class="input register_font">註冊</button>
+            </form>
+        </div>
+    </div>
+    <div class="bg-modal2">
+        <div class="modal-content2">
+            <div class="close2">
+                +
+            </div>
+            <form action="loginCheckDB.php" name="form1" method="post" autocomplete="off">
+                <p class="register_font" >用戶登入</p>
+                <input type = "text" name="uname" placeholder="用戶名"  class="input register_font" required>
+                <input type = "password" name="password" placeholder="密碼" class="input register_font" required>
+                <button type = "submit" value="Submit" class="input register_font" onclick="login()">登入</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/loginpage.js"></script>
